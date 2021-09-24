@@ -1,5 +1,5 @@
 <?php
-
+/* Need to update these settings */
 /* SETTINGS */
 $recipient = "your.email@gmail.com";
 $subject = "New Message from Contact Form";
