@@ -1,0 +1,33 @@
+{
+  "name": "showcase-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshdavid/showcase-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakeshdavid/showcase-hub/issues"
+  },
+  "homepage": "https://github.com/rakeshdavid/showcase-hub#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/html": "^6.3.8",
+    "babel-loader": "^8.2.2"
+  },
+  "dependencies": {
+    "@reapit/storybook-addon-html": "^5.0.1"
+  }
+}
