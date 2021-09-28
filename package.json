@@ -26,8 +26,15 @@
     "@storybook/addon-links": "^6.3.8",
     "@storybook/html": "^6.3.8",
     "babel-loader": "^8.2.2"
+    "glob-parent": ">=5.1.2"
   },
   "dependencies": {
     "@reapit/storybook-addon-html": "^5.0.1"
+  }
+}
+
+{
+  "scripts": {
+    "build-storybook": "build-storybook -s public"
   }
 }
