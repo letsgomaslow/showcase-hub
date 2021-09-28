@@ -8,6 +8,3 @@ module.exports = {
     "@storybook/addon-essentials"
   ]
 }
-module.exports = {
-  addons: ['@storybook/addon-essentials'],
-};

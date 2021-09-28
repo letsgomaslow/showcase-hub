@@ -7,58 +7,31 @@ export const createPage = ({ user, onLogout, onLogin, onCreateAccount }) => {
   const header = createHeader({ onLogin, onLogout, onCreateAccount, user });
   article.appendChild(header);
   const section = `
-  <section>
-    <h2>Pages in Storybook</h2>
-    <p>
-      We recommend building UIs with a
-      <a
-        href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e"
-        target="_blank"
-        rel="noopener noreferrer">
-        <strong>component-driven</strong>
-      </a>
-      process starting with atomic components and ending with pages.
-    </p>
-    <p>
-      Render pages with mock data. This makes it easy to build and review page states without
-      needing to navigate to them in your app. Here are some handy patterns for managing page data
-      in Storybook:
-    </p>
-    <ul>
-      <li>
-        Use a higher-level connected component. Storybook helps you compose such data from the
-        "args" of child component stories
-      </li>
-      <li>
-        Assemble data in the page component from your services. You can mock these services out
-        using Storybook.
-      </li>
-    </ul>
-    <p>
-      Get a guided tutorial on component-driven development at
-      <a href="https://storybook.js.org/tutorials/" target="_blank" rel="noopener noreferrer">
-        Storybook tutorials
-      </a>
-      . Read more in the
-      <a href="https://storybook.js.org/docs" target="_blank" rel="noopener noreferrer">docs</a>
-      .
-    </p>
-    <div class="tip-wrapper">
-      <span class="tip">Tip</span>
-      Adjust the width of the canvas with the
-      <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fillRule="evenodd">
-          <path
-            d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0
-            01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0
-            010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
-            id="a"
-            fill="#999" />
-        </g>
-      </svg>
-      Viewports addon in the toolbar
+  <section class="slide fade-6 kenBurns" data-title="Intro" data-name="Home-intro">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter reverse">
+            <li class="col-6-12 left middle">
+              <div class="fix-5-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
+                <h1 class="ae-1 fromLeft smaller margin-bottom-2">Digital coaching, audition, and competition platform for dancers and actors</h1>
+                <p class="ae-2 fromLeft large margin-bottom-4"><span class="opacity-8">Helping performers of all levels create community and grow professionally. </span></p>
+                <a class="button round margin-top-2 customColor" href="https://platform.showcasehub.com/">Create a free account</a>
+              </div>
+            </li>
+            <li class="col-6-12">
+              <img class="ae-4 margin-bottom-tablet-4" width="580" styles="margin:-28% 0" src="assets/uploads/facebook-post-940x788-px.png?p=dPJANKvw" alt="iPhones Thumbnail" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
     </div>
-  </section>
+  </div>
+  <div class="background" style="background-image:url(https://images.unsplash.com/photo-1520220226493-0a431e2904eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80)"></div>
+</section>
 `;
 
   article.insertAdjacentHTML('beforeend', section);
