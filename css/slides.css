@@ -1,19 +1,5 @@
 @charset "UTF-8";
-/*
 
-   _____ _       _              _____  _____ _____
-  / ___/| (•)   | |           / ____// ____/ ____/  v 5.2.1
- | (___ | |_  __| | ___ ____ | |    | (___| (___
-  \___ \| | |/ _` |/ _ / __/ | |     \___ \ ___ \
-  ____) | | | (_| |  __\__ \ | |____ ____) |___) |
- /_____/|_|_|\__,_|\___/___/  \_____/_____/_____/
-
-
-This file contains styles required for the proper functionality and display
-of your Project.
-
-
-*/
 /* CSS RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
@@ -221,7 +207,7 @@ img.rounded {
   padding: 12px;
   border-radius: 25px;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, #E7133E, #F31682);
   line-height: 1;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   cursor: pointer;
@@ -2397,7 +2383,7 @@ html.mobile .showForMobileInline {
   height: 100%;
   color: #fff;
   z-index: 500;
-  background: #0E0E0E;
+  background: ##21262F;
   transition: transform 0.5s, visibility 0s;
   transform: translateX(100%);
   overflow-y: auto;
