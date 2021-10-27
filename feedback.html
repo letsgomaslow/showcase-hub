@@ -42,6 +42,31 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
+
+/* STYLES FOR PNG LOGO */
+.logoHolder {
+   position:relative;
+   top:-60%;
+   display:block;
+}
+.whiteLogo,
+.blackLogo {
+   position:absolute;
+   left:0;
+   top:0;
+   opacity:0;
+   -webkit-transition:opacity 0.5s;
+   transition:opacity 0.5s;
+}
+.slides.whiteSlide .blackLogo,
+.slides:not(.whiteSlide) .whiteLogo {
+   opacity:1;
+}
+
+.customColor { background: #ef0025; }
+.customColor1 { background: #005de9; }
+
+
     </style>
     <!-- jQuery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -124,38 +149,7 @@
     <ul></ul>
   </div>
 </nav><!-- EXAMPLE: Panel Raster Logo -->
-<!-- 1) Copy styles -->
-<style>
-/* STYLES FOR PNG LOGO */
-.logoHolder {
-   position:relative;
-   top:-60%;
-   display:block;
-}
-.whiteLogo,
-.blackLogo {
-   position:absolute;
-   left:0;
-   top:0;
-   opacity:0;
-   -webkit-transition:opacity 0.5s;
-   transition:opacity 0.5s;
-}
-.slides.whiteSlide .blackLogo,
-.slides:not(.whiteSlide) .whiteLogo {
-   opacity:1;
-}
 
-
-</style>
-
-
-<!-- If you need a custom color -->
-<style>
-.customColor { background: #ef0025; }
-.customColor1 { background: #005de9; }
-
-</style>
 <!-- Panel Top #10 -->
 <nav class="panel top">
   <div class="sections">
@@ -195,12 +189,7 @@
   </div>
 
 </nav>
-<!-- If you need a custom color -->
-<style>
-.customColor { background: #ef0025; }
-.customColor1 { background: #005de9; }
 
-</style>
 <!-- Feedback-->
 <!-- Slide #55 -->
 <section class="slide fade-6 kenBurns" data-title="Feedback" data-name="about-us-Feedback">
@@ -212,6 +201,9 @@
         <div class="ae-2"><p>Please let us know how we are doing?</p></div>
         <div class="fix-5-12 margin-top-6 form-55">
           <div class="pad shadow selected ae-3">
+            <div data-erxes-embed="BYaocM" style="width:auto;height:auto"></div>
+
+            <!--
             <form class="slides-form wide left" action="ajax-email.php" id="contact-form" method="post" data-ajax-form="true">      
               <div class="label"><label class="opacity-5" for="subject55">How do you like Showcase Hub so far?</label></div>
               <select class="wide" style="max-width: 100%" id="subject55" name="subject">
@@ -226,7 +218,7 @@
               <div class="label"><label class="opacity-5" for="message55">Drop us a line</label></div>
               <textarea class="wide left" id="message55" type="text" name="message" placeholder="Message" required></textarea>
               <input class="button round margin-top-2 customColor" type="submit" name="submit" value="Send message" data-success-text="Done!" data-success-class="green"/>
-            </form>
+            </form> -->
           </div>
         </div>
         
@@ -255,22 +247,17 @@
 </nav>
 
 
-    <script>
-      window.erxesSettings = {
-        messenger: {
-          brand_id: "qdLTnH",
-        },
-      };
-      
-    (function() {
-      var script = document.createElement('script');
-      script.src = "https://operations.maslow.ai/widgets/build/messengerWidget.bundle.js";
-      script.async = true;
-      var entry = document.getElementsByTagName('script')[0];
-      entry.parentNode.insertBefore(script, entry);
-    })();
-  
-    </script>
+
+<script>
+  (function() {
+    var script = document.createElement('script');
+    script.src = "https://operations.maslow.ai/widgets/build/manager.bundle.js?id=kZGrckiDZ29PE9ArC&apiUrl=https://operations.maslow.ai/api";
+    script.async = true;
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+  })();
+</script>
+
    
 </body>
 </html>
