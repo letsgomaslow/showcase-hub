@@ -42,28 +42,52 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
+        .logoHolder {
+   position:relative;
+   top:-60%;
+   display:block;
+}
+.whiteLogo,
+.blackLogo {
+   position:absolute;
+   left:0;
+   top:0;
+   opacity:0;
+   -webkit-transition:opacity 0.5s;
+   transition:opacity 0.5s;
+}
+.slides.whiteSlide .blackLogo,
+.slides:not(.whiteSlide) .whiteLogo {
+   opacity:1;
+}
+.customColor { background: #ef0025; }
+.customColor1 { background: #005de9; }
     </style>
+    <!-- 1) Copy styles -->
+
     <!-- jQuery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compressed Scripts -->
     <script src="js/slides.min.js?521351" type="text/javascript"></script>
+    
     <script>
       window.erxesSettings = {
         messenger: {
-          brand_id: "kPBoW7",
+          brand_id: "qdLTnH",
         },
       };
       
     (function() {
       var script = document.createElement('script');
-      script.src = "https://maslowai.app.erxes.io/widgets/build/messengerWidget.bundle.js";
+      script.src = "https://operations.maslow.ai/widgets/build/messengerWidget.bundle.js";
       script.async = true;
       var entry = document.getElementsByTagName('script')[0];
       entry.parentNode.insertBefore(script, entry);
     })();
   
-    </script> 
+    </script>
+  
 </head>
 <body class="slides chain smooth smoothScroll animated noPreload">
 <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -139,39 +163,7 @@
     <ul></ul>
   </div>
 </nav><!-- EXAMPLE: Panel Raster Logo -->
-<!-- 1) Copy styles -->
-<style>
-/* STYLES FOR PNG LOGO */
-.logoHolder {
-   position:relative;
-   top:-60%;
-   display:block;
-}
-.whiteLogo,
-.blackLogo {
-   position:absolute;
-   left:0;
-   top:0;
-   opacity:0;
-   -webkit-transition:opacity 0.5s;
-   transition:opacity 0.5s;
-}
-.slides.whiteSlide .blackLogo,
-.slides:not(.whiteSlide) .whiteLogo {
-   opacity:1;
-}
 
-
-</style>
-
-
-
-<!-- If you need a custom color -->
-<style>
-.customColor { background: #ef0025; }
-.customColor1 { background: #005de9; }
-
-</style>
 <!-- Panel Top #10 -->
 <nav class="panel top">
   <div class="sections">
@@ -211,12 +203,6 @@
   </div>
 
 </nav>
-<style>
-.customColor { background: #ef0025; }
-.customColor1 { background: #005de9; }
-
-</style>
-
 <!-- EXAMPLE: Popup -->
 <!-- All Popup buttons -->
 <section class="slide fade-6 kenBurns" data-title="Legal" data-name="slide-11-4168209c">

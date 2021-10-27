@@ -66,9 +66,35 @@
       .progress-bar {
         background-color: #ef0025;
       }
+        .can {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 300px auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .slides.scroll .can {
+    background-attachment: fixed;
+  }
+
+  .can.chardonnay {
+    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898883/Showcase%20Hub/Mockups/Iphone/Step1_gthevp.png);
+  }
+
+  .can.rose {
+    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898883/Showcase%20Hub/Mockups/Iphone/Step2_k7kwhv.png);
+  }
+
+  .can.red-wine {
+    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898884/Showcase%20Hub/Mockups/Iphone/Step3_ldfctw.png);
+  }
       
     </style>
-  
+</style>
     <!-- jQuery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -76,6 +102,22 @@
     <script src="js/slides.min.js?521351" type="text/javascript"></script>
      
 </head>
+    <script>
+      window.erxesSettings = {
+        messenger: {
+          brand_id: "qdLTnH",
+        },
+      };
+      
+    (function() {
+      var script = document.createElement('script');
+      script.src = "https://operations.maslow.ai/widgets/build/messengerWidget.bundle.js";
+      script.async = true;
+      var entry = document.getElementsByTagName('script')[0];
+      entry.parentNode.insertBefore(script, entry);
+    })();
+  
+    </script>
 <body class="slides scroll smooth slow smoothScroll animated">
 <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
   
@@ -191,36 +233,7 @@
   </div>
 
 </nav>
-<!-- EXAMPLE: Rolling Element -->
-<!-- copy styles -->
-<style>
-  .can {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 300px auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-  }
 
-  .slides.scroll .can {
-    background-attachment: fixed;
-  }
-
-  .can.chardonnay {
-    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898883/Showcase%20Hub/Mockups/Iphone/Step1_gthevp.png);
-  }
-
-  .can.rose {
-    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898883/Showcase%20Hub/Mockups/Iphone/Step2_k7kwhv.png);
-  }
-
-  .can.red-wine {
-    background-image: url(https://res.cloudinary.com/judithinc/image/upload/v1633898884/Showcase%20Hub/Mockups/Iphone/Step3_ldfctw.png);
-  }
-</style>
 
 <!-- How it works -->
 <section class="slide teal" data-title="How it works" data-name="How-it-works">
@@ -301,24 +314,5 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar></div>
-
-
-    <script>
-      window.erxesSettings = {
-        messenger: {
-          brand_id: "qdLTnH",
-        },
-      };
-      
-    (function() {
-      var script = document.createElement('script');
-      script.src = "https://operations.maslow.ai/widgets/build/messengerWidget.bundle.js";
-      script.async = true;
-      var entry = document.getElementsByTagName('script')[0];
-      entry.parentNode.insertBefore(script, entry);
-    })();
-  
-    </script>
-   
 </body>
 </html>
