@@ -42,7 +42,33 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
         }
+           /* STYLES FOR PNG LOGO */
+      .logoHolder {
+         position:relative;
+         top:-60%;
+         display:block;
+      }
+      .whiteLogo,
+      .blackLogo {
+         position:absolute;
+         left:0;
+         top:0;
+         opacity:0;
+         -webkit-transition:opacity 0.5s;
+         transition:opacity 0.5s;
+      }
+      .slides.whiteSlide .blackLogo,
+      .slides:not(.whiteSlide) .whiteLogo {
+         opacity:1;
+      }
+      .customColor { background: #ef0025; }
+      .customColor1 { background: #005de9; }
+      .progress-bar {
+        background-color: #ef0025;
+      }
+      
     </style>
+  
     <!-- jQuery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -124,38 +150,8 @@
     <ul></ul>
   </div>
 </nav><!-- EXAMPLE: Panel Raster Logo -->
-<!-- 1) Copy styles -->
-<style>
-/* STYLES FOR PNG LOGO */
-.logoHolder {
-   position:relative;
-   top:-60%;
-   display:block;
-}
-.whiteLogo,
-.blackLogo {
-   position:absolute;
-   left:0;
-   top:0;
-   opacity:0;
-   -webkit-transition:opacity 0.5s;
-   transition:opacity 0.5s;
-}
-.slides.whiteSlide .blackLogo,
-.slides:not(.whiteSlide) .whiteLogo {
-   opacity:1;
-}
 
 
-</style>
-
-
-<!-- If you need a custom color -->
-<style>
-.customColor { background: #ef0025; }
-.customColor1 { background: #005de9; }
-
-</style>
 <!-- Panel Top #10 -->
 <nav class="panel top">
   <div class="sections">
@@ -304,7 +300,7 @@
 </nav>
 
 <!-- Loading Progress Bar -->
-<div class="progress-bar blue"></div>
+<div class="progress-bar></div>
 
 
     <script>
