@@ -1,0 +1,22 @@
+
+.logoHolder {
+   position:relative;
+   top:-60%;
+   display:block;
+}
+.whiteLogo,
+.blackLogo {
+   position:absolute;
+   left:0;
+   top:0;
+   opacity:0;
+   -webkit-transition:opacity 0.5s;
+   transition:opacity 0.5s;
+}
+.slides.whiteSlide .blackLogo,
+.slides:not(.whiteSlide) .whiteLogo {
+   opacity:1;
+}
+
+.customColor { background: #ef0025; }
+.customColor1 { background: #005de9; }
