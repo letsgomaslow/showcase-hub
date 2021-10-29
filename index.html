@@ -54,7 +54,91 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
       }
+           /* get more here: http://www.colorzilla.com/gradient-editor/ */
+      .gradient-1 {
+        background: rgba(255, 42, 104, 1);
+        background: -moz-linear-gradient(
+          45deg,
+          rgba(255, 42, 104, 1) 0%,
+          rgba(255, 94, 58, 1) 100%
+        );
+        background: -webkit-gradient(
+          left bottom,
+          right top,
+          color-stop(0%, rgba(255, 42, 104, 1)),
+          color-stop(100%, rgba(255, 94, 58, 1))
+        );
+        background: -webkit-linear-gradient(
+          45deg,
+          rgba(255, 42, 104, 1) 0%,
+          rgba(255, 94, 58, 1) 100%
+        );
+        background: -o-linear-gradient(
+          45deg,
+          rgba(255, 42, 104, 1) 0%,
+          rgba(255, 94, 58, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          45deg,
+          rgba(255, 42, 104, 1) 0%,
+          rgba(255, 94, 58, 1) 100%
+        );
+        background: linear-gradient(
+          45deg,
+          rgba(255, 42, 104, 1) 0%,
+          rgba(255, 94, 58, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#ff5e3a', GradientType=1 );
+      }
+      .gradient-2 {
+        background: rgba(198, 68, 252, 1);
+        background: -moz-linear-gradient(
+          top,
+          rgba(198, 68, 252, 1) 0%,
+          rgba(88, 86, 214, 1) 100%
+        );
+        background: -webkit-gradient(
+          left top,
+          left bottom,
+          color-stop(0%, rgba(198, 68, 252, 1)),
+          color-stop(100%, rgba(88, 86, 214, 1))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(198, 68, 252, 1) 0%,
+          rgba(88, 86, 214, 1) 100%
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(198, 68, 252, 1) 0%,
+          rgba(88, 86, 214, 1) 100%
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(198, 68, 252, 1) 0%,
+          rgba(88, 86, 214, 1) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(198, 68, 252, 1) 0%,
+          rgba(88, 86, 214, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
+      }
+            .customColor {
+        background: #ef0025;
+      }
+      .customColor1 {
+        background: #005de9;
+      }
+      .agreetext {
+        color: #ffffff;     
+      }
+      .agreebackground {
+        background-color: #000000;
+      }
     </style>
+
     <!-- jQuery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -577,6 +661,7 @@ setTimeout(ldinsp, 0);
         color: #2973f7;
       }
     </style>
+    
     <!-- Home Into slide -->
     <section
       class="slide fade-6 kenBurns"
@@ -787,81 +872,6 @@ setTimeout(ldinsp, 0);
         "
       ></div>
     </section>
-    <!-- EXAMPLE: Background Gradient -->
-    <style>
-      /* get more here: http://www.colorzilla.com/gradient-editor/ */
-      .gradient-1 {
-        background: rgba(255, 42, 104, 1);
-        background: -moz-linear-gradient(
-          45deg,
-          rgba(255, 42, 104, 1) 0%,
-          rgba(255, 94, 58, 1) 100%
-        );
-        background: -webkit-gradient(
-          left bottom,
-          right top,
-          color-stop(0%, rgba(255, 42, 104, 1)),
-          color-stop(100%, rgba(255, 94, 58, 1))
-        );
-        background: -webkit-linear-gradient(
-          45deg,
-          rgba(255, 42, 104, 1) 0%,
-          rgba(255, 94, 58, 1) 100%
-        );
-        background: -o-linear-gradient(
-          45deg,
-          rgba(255, 42, 104, 1) 0%,
-          rgba(255, 94, 58, 1) 100%
-        );
-        background: -ms-linear-gradient(
-          45deg,
-          rgba(255, 42, 104, 1) 0%,
-          rgba(255, 94, 58, 1) 100%
-        );
-        background: linear-gradient(
-          45deg,
-          rgba(255, 42, 104, 1) 0%,
-          rgba(255, 94, 58, 1) 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#ff5e3a', GradientType=1 );
-      }
-      .gradient-2 {
-        background: rgba(198, 68, 252, 1);
-        background: -moz-linear-gradient(
-          top,
-          rgba(198, 68, 252, 1) 0%,
-          rgba(88, 86, 214, 1) 100%
-        );
-        background: -webkit-gradient(
-          left top,
-          left bottom,
-          color-stop(0%, rgba(198, 68, 252, 1)),
-          color-stop(100%, rgba(88, 86, 214, 1))
-        );
-        background: -webkit-linear-gradient(
-          top,
-          rgba(198, 68, 252, 1) 0%,
-          rgba(88, 86, 214, 1) 100%
-        );
-        background: -o-linear-gradient(
-          top,
-          rgba(198, 68, 252, 1) 0%,
-          rgba(88, 86, 214, 1) 100%
-        );
-        background: -ms-linear-gradient(
-          top,
-          rgba(198, 68, 252, 1) 0%,
-          rgba(88, 86, 214, 1) 100%
-        );
-        background: linear-gradient(
-          to bottom,
-          rgba(198, 68, 252, 1) 0%,
-          rgba(88, 86, 214, 1) 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c644fc', endColorstr='#5856d6', GradientType=0 );
-      }
-    </style>
-
     <!-- Testimonials -->
     <section class="slide" data-title="Testimonials" data-name="Testimonials">
       <div class="content">
@@ -989,14 +999,7 @@ setTimeout(ldinsp, 0);
         "
       ></div>
     </section>
-    <style>
-      .customColor {
-        background: #ef0025;
-      }
-      .customColor1 {
-        background: #005de9;
-      }
-    </style>
+
     <!-- Our Mission -->
     <section
       class="slide fade-6 kenBurns"
@@ -1323,7 +1326,18 @@ setTimeout(ldinsp, 0);
         "
       ></div>
     </section>
-
+<div class="dialogContainer bottom left">
+	<div class="dialog rounded bottom" data-dialog-id="accept-cookies">
+		<div class="close" data-dialog-action="close"></div>
+		<div class="dialogContent">
+			<img width="50" class="avatar" src="https://lh6.ggpht.com/0O-HefMHNwemt4gnJ4YfNq3xFaTBaiFcwIRiUpzDZ1KObI8ptEMgoHOSDiy_tumRWexz=w300" alt="Cookie Icon">
+			<div class="text opacity-8">This website uses cookies to ensure you get the best experience.</div>
+		</div>
+		<ul>
+			<li data-href="privacy.html" data-target="_blank" title="privacy.html">More Info</li>
+			<li data-dialog-action="close" class="agreetext agreebackground" onclick="$.cookie('accept-cookies',true,{expires:30,path:'/'});">I Agree</li>
+		</ul> 
+	</div>
     <script async defer src="//www.instagram.com/embed.js"></script>
 
     <!-- Panel Bottom #13 -->
